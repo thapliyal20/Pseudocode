@@ -1,0 +1,21 @@
+/*************************************************************************************
+*File		: 1.5.txt
+*Author name	: Capgemini
+*Version            	: 3.0
+*Description	: To convert a binary number to decimal
+*************************************************************************************/
+BEGIN
+	DECLARE BinaryNumber AS INTEGER
+	DECLARE DecimalValue AS INTEGER
+	DECLARE Remainder AS REAL
+	INITIALIZE DecimalValue TO 0
+	PROMPT"Entre Binary Number of 8 Digit"
+	ACCEPT BinaryNumber
+	
+	FOR index 0 TO 7
+		CALCULATE Remainder=BinaryNumber%10
+		CALCULATE DecimalValue=DecimalValue+Remainder
+		CALCULATE BinaryNumber=BinaryNumber/10
+	END FOR
+	PRINT DecimalValue
+END 

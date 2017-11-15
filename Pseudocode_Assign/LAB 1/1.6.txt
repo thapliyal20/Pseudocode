@@ -1,0 +1,33 @@
+/*************************************************************************************
+*File		: 1.6.txt
+*Author name	: Capgemini
+*Version           	: 3.0
+*Description	: Checking whether the given number is an odd or even by using loops
+*************************************************************************************/
+
+BEGIN
+	
+	DECLARE Num[10] AS INTEGER
+	DECLARE Min AS INTEGER
+	
+	FOR Index 1 to 10
+	      ACCEPT Num[Index]
+	END FOR
+	MIN=Num[0]
+	FOR Index 1 to 10
+		IF Num[Index]<Min
+		Min=Num[Index]
+	END FOR
+	PRINT MIN
+	
+	FOR iNDEX 1 TO 10
+	
+	IF Num[Index]%2=0
+		PRINT "EVEN"
+		PRINT "Num[Index]"
+	ELSE
+		PRINT "ODD"
+		PRINT "Num[Index]"
+	END IF
+	END FOR
+END

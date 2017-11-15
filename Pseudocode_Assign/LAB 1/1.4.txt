@@ -1,0 +1,29 @@
+/*******************************************************************************
+*File		:1.4.txt
+*Author name	:Capgemini
+*Description	:Finding whether the given number is an amstrong number or not
+*Version		:3.0
+********************************************************************************/
+BEGIN		
+
+	DECLARE Num AS INTEGER
+	DECLARE Temp AS INTEGER
+	DECLARE TempNum AS INTEGER
+	
+	INITIALIZE TempNum TO 0
+	Temp=Num
+	
+	WHILE Temp!=0
+
+		TempNum=Temp%10;
+		TempNum+=TempNum*TempNum*TempNum
+		Temp=Temp/10
+	END WHILE
+
+	IF TempNum=NUM
+		DISPLAY "Is an Amstrong Number"
+	ELSE
+		DISPLAY "Not an Amstrong Number"
+	END IF
+END	
+	

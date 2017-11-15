@@ -1,0 +1,52 @@
+/**************************************************************************************************
+* File		: 2.3.txt
+* Author name	: Capgemini
+* Description	: A code to accept an array of elements and returns the unique values in an array
+* Created date	: 5/12/2017
+* Version		: 3.0
+**************************************************************************************************/
+
+BEGIN
+	DECLARE Num[10] AS INTEGER ARRAY
+	PRINT "Entre the 10 Numbers"
+	EnterDigit()
+	UniqueSearch(Num[])
+END
+
+SUB EnterDigit()
+	
+	FOR Index 1 TO 10
+		ACCEPT Num[Index]
+	END FOR
+	RETURN Num
+
+END SUB
+
+SUB UniqueSearch(Num[])
+	
+	DECLARE Temp
+	DECLARE Count
+	INITIALIZE Count TO 0
+	
+	FOR Index 1 TO 10
+		
+		Temp = Num[Index]
+		Count=0
+	    FOR Index 1 TO 10
+		 
+			IF Index1=Index THEN
+			CONTINUE
+			END IF
+
+			IF Num[Index] = Temp THEN
+			Count++ 
+			END IF
+
+	   END FOR
+		IF Count=0 THEN
+		PRINT Num[Index]	
+
+
+	END FOR
+
+END SUB

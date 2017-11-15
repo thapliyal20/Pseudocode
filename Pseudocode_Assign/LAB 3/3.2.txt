@@ -1,0 +1,10 @@
+/****************************************************************************************
+* File		:3.2.txt
+* Author Name	:Capgemini
+* Description	:Finding the efficiency of the given algorithm by taking an example.
+* Version		:3.0
+****************************************************************************************/
+ 1) Out put of the given algorithm : It finds the Smallest Number among the set of 'n' real numbers
+
+ 2) Efficiency = 1(Because It has no loops in the given code.)
+ 

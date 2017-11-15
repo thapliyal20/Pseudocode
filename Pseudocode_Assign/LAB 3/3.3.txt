@@ -1,0 +1,9 @@
+/***********************************************************************
+* File		: 3.3.txt
+* Author name	: Capgemini
+* Description	: finding the efficiency of the given algorithm
+* Version      	 : 3.0
+***********************************************************************/
+
+1. The given Code performs the multiplication of N*N Matrix
+          Time Efficiency= 0(n^3).

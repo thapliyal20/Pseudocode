@@ -1,0 +1,27 @@
+/***********************************************************************************************
+*File		: 6.1.txt
+*Author name	: Capgemini
+*Description 	: Recording the review comments in the check list
+*version		: 3.0
+***********************************************************************************************/
+
+1) Are the header conventions follwed?
+	Yes
+2 ) Is the code well structured,consistent in style,and consistently formatted?
+	yes
+3 ) Are all variables properly defined with meaningful,consistent,and clear names?
+	yes
+4 ) Are all loops,branches,and logic constructs complete,correct and properly nested?
+	yes
+5 ) Are the most common cases tested first in  IF ELSE IF CHAINS?
+	YES
+6 ) Are the key words capitalized?
+	yes
+7 ) Is the modulariuty approach obeyed?
+	Yes
+8 )Are the indexex and the subscripts properly initialized,just prior in the loop?
+	Yes
+9 ) Is the input and the output dislayed properly?
+	yes
+10 ) Is the code readable and maintainable?
+	Yes

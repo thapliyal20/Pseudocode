@@ -1,0 +1,28 @@
+/*******************************************************************************************
+*File		: 3.1.txt
+*Author name	: Capgemini
+*Description	: Answering the queries of the given algorithm.
+*Version		: 3.0
+*******************************************************************************************/
+
+1) What does the algorithm computes ?
+
+Sol	: It finds the difference between the largest and the smallest number among the set of 
+	  'n' real numbers
+
+2) What is the basic operatoin ?
+
+sol	: The Basic Operation that the code performs is "comparison in the for loop"
+
+3) Check the number of times the basic operation is executed depends only on the size of an input or on any other parameter
+
+sol:	: For any set Of Inputs the Basic Operation of comparison is done twice 
+	  the no. of the inputs so it depends on the size of the input given.
+
+4) set up a sum/recurrence,expressing the number of times the basic operation is executed ?
+
+Sol	: Sum=2n(each n for one Basic Operation Of comparision)
+
+5) What is the efficiency class of the given algorithm ?
+
+sol	: Efficiency of the Algorithm= 0(n).

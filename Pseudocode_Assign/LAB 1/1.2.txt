@@ -1,0 +1,20 @@
+/**********************************************************************************
+*File		: 1.2.txt
+*Author name 	: Capgemini
+*Description	: Assigning the tag colors based on the experinece of an employee
+*version		: 3.0
+**********************************************************************************/
+BEGIN
+	DECLARE emp_exp AS INTEGER
+	PROMPT"Enter years of experience"AND STORE IN emp_exp
+	IF(0<= emp_exp<3)THEN
+		PRINT"Blue"
+	ELSE IF ((emp_exp<3)&&(emp_exp<5))THEN
+		PRINT"Grey"
+	ELSE IF((emp_exp<5)&&(emp_exp<=10))THEN
+		PRINT"Yellow"
+	ELSE
+		PRINT"Red"
+		End IF
+END
+	

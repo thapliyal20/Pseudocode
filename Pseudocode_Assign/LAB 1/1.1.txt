@@ -1,0 +1,23 @@
+/*********************************************************************
+*File		: 1.1.txt
+*Author name 	: Capgemini
+*Description	: printing the electricity bill
+*version		: 3.0
+********************************************************************/
+BEGIN
+	DECLARE user name AS STRING
+	DECLARE user id AS INTEGER
+	DECLARE Units consumed,Net amount AS REAL
+	DECLARE CONSTANT Fixed charge=100
+                 INTIALISE per_unit_charge TO 1.15	
+	DECLARE lastcharge,current charge AS REAL
+	PROMPT"Enter user name" AND STORE IN Username
+	PROMPT"Enter user id" AND STORE IN userid
+	CALCULATE"Unit charge="lastcharge-current charge
+	CALCULATE"Net amount="Unit consumed*per_unit_charge +Fixed Charge
+	DISPLAY User id
+	DISPLAY User name
+	DISPLAY Unit charge
+	DISPLAY Net amount
+END
+	

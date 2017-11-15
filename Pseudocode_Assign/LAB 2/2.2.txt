@@ -1,0 +1,30 @@
+/*********************************************************************************
+*File		:2.2.txt
+*Author name	:Capgemini
+*Description	:accepts a number and returns the sum of its digits
+*Version		:3.0
+*created date	:5/12/2017
+**********************************************************************************/
+
+BEGIN
+	DECLARE Num AS INTEGER
+	
+	PROMPT"enter the number"
+	ACCEPT Num
+	ADD(Num)
+
+END
+SUB ADD(Num)
+	
+	DECLARE Temp AS INTEGER
+	DECLARE Sum AS INTEGER	
+	
+	WHILE(Num!=0)
+	DO
+		Sum+=Num%10
+		Num=Num/10
+	END WHILE
+	
+	PRINT Sum
+
+END SUB

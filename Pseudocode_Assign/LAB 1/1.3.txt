@@ -1,0 +1,26 @@
+/**********************************************************
+*file		: 1.3.txt
+*Author name	: Capgemini
+*Description	: TP PRINT THE SERIES 0 1 1 2 3 5 
+*Version		: 3.0
+*********************************************************/
+
+BEGIN
+	DECLARE N,ctr,next_num AS INTEGER
+	
+	INITIALIZE num_1=0
+	INITIALIZE num_2=1
+	PROMPT"Enter the number of terms:" AND STORE IN N	
+	FOR ctr=0 to N
+		IF(ctr<=1)THEN
+	next_num=ctr
+	
+		ELSE
+			next_num=num_1+num_2
+			num_1=num_2
+			num_2=next_num
+		END IF
+	DISPLAY next_num
+	END FOR
+END
+

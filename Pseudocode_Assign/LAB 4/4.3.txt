@@ -1,0 +1,69 @@
+/*******************************************************************************************
+*File                            :EffectiveCost.txt
+*Author Name             :Capgemini
+*Desc		:Calculate The Effective Cost
+*Version		 :1.0
+*Created date	 :5/12/2017
+*******************************************************************************************/
+
+BEGIN
+
+	DECLARE Price AS REAL
+
+	DECLARE Totalcost AS REAL
+
+	DECLARE Quantity AS INTEGER
+
+	CONSTANT TAX_RATE 
+
+	INITIALIZE TAX_RATE TO .56
+
+	PROMPT "Enter the Price Of Product"
+	ACCEPT Price
+
+
+	PROMPT "Enter the Quantity Of Product"
+	ACCEPT Quantity
+
+	
+	IF(IsValid(Price)) THEN
+
+		IF(IsValid(Quantity)) THEN
+
+
+			Totalcost=Price*TAX_RATE
+
+			PRINT "Total Price Of Product is:",Totalcost
+
+	ELSE
+		PRINT "Price is not Valid"
+		
+		  
+		EXCEPTION
+			WHEN NotProperAns THEN
+		   	  
+			    PRINT "Not the Proper Ans"
+
+END
+
+ 
+/*******************************************************************************************
+*Module Name             	:IsValid()
+*Input parameters      	  	:Price
+*Return Type		 :Boolean
+*Author			 :Capgemini
+*Creation Date		 :5/12/2017
+*Description		 :Checks whether the price is valid or not then throws the Exception
+*******************************************************************************************/
+
+SUB IsValid(Data)
+
+	IF(IsDigit(Data))
+	 
+	   RETURN True
+	
+	ELSE
+
+       	    RAISE NotProperAns("Enter the Proper Ans")
+
+END SUB 
